@@ -1,7 +1,13 @@
 .App {
   text-align: center;
+  background-color:rgb(245, 220, 244);
+  margin:300px;
 }
-
+.filter-list h1{
+  position:relative;
+  left:30px;
+  color:purple;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +32,18 @@
 
 .App-link {
   color: #61dafb;
+}
+#typeDropdown{
+background-color:rgb(255, 192, 241);
+width:70px;
+position:relative;
+}
+.filter-list input{
+  width:60px;
+  position:relative;
+  bottom:44px;
+  left: 70px;
+  background-color: rgb(255, 231, 253);
 }
 
 @keyframes App-logo-spin {

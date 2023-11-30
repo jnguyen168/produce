@@ -19,7 +19,7 @@ this.setState({search: event.target.value.toLowerCase()});
 filterItem = (item) => { 
 // Checks if the current search term is contained in this item
 //return item.name.toLowerCase().search(this.state.search) !== -1; 
-   if(this.state.dropkey !="all"){
+   if(this.state.dropkey !=="all"){
 	  return item.type.toLowerCase().search(this.state.dropkey) !==-1; 
    }
    else{
@@ -40,10 +40,10 @@ return (
 <div className="filter-list">
    <h1>Produce Search</h1>
    <DropdownButton id="typeDropdown" title={"Type"} onSelect={this.onSelect} >
-	<Dropdown.Item eventKey="all">All</Dropdown.Item>
-	<Dropdown.Item eventKey="Fruit">Fruits</Dropdown.Item>
-	<Dropdown.Item eventKey="Vegetable">Vegetables</Dropdown.Item>
-   </DropdownButton>
+	<Dropdown.Item eventKey="all">All </Dropdown.Item>
+	<Dropdown.Item eventKey="Fruit">Fruits </Dropdown.Item>
+	<Dropdown.Item eventKey="Vegetable">Vegetables </Dropdown.Item>
+   </DropdownButton><br/>
    <input type="text" placeholder="Search" onChange={this.onSearch} />
    <List items={this.props.items.filter(this.filterItem)} />
 </div>
